@@ -1,0 +1,68 @@
+/* Reset basic styles */
+body, .logo, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color:  #6a2c7062; /* Soft pink for a beauty theme */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.logo h1 {
+    font-size: 24px;
+    color:  #6a2c70;
+}
+
+.logo span {
+    color:  #6a2c70; /* Highlight part of the logo name */
+    font-weight: bold;
+}
+
+/* Navigation Menu */
+.menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    color:  #6a2c70;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+/* Hover effect */
+.menu ul li a:hover {
+    color: #6a2c70;
+    border-bottom: 2px solid  #6a2c70;
+}
+/* Container for the logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px; /* Adjust the size to match your logo design */
+    height: 150px;
+    background-color:  #6a2c70; /* Optional background for the logo container */
+    border-radius: 50%; /* Makes the container round */
+    overflow: hidden; /* Ensures the image fits inside the rounded shape */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for better aesthetics */
+}
+
+
