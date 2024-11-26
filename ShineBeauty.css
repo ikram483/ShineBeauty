@@ -15,23 +15,21 @@ header {
     padding: 20px 40px;
     background-color:  #6a2c7062; /* Soft pink for a beauty theme */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0px; /* Espacement intérieur */
+    border-radius: 15px; /* Coins arrondis */
+    max-width: 100%;
+    
 }
 
 /* Logo Styling */
-.logo h1 {
-    font-size: 24px;
-    color:  #6a2c70;
-}
 
-.logo span {
-    color:  #6a2c70; /* Highlight part of the logo name */
-    font-weight: bold;
-}
+
+
 
 /* Navigation Menu */
 .menu ul {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .menu ul li {
@@ -39,12 +37,13 @@ header {
 }
 
 .menu ul li a {
-    color:  #6a2c70;
-    font-size: 16px;
+    color:  #C7AE6A;
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     padding: 5px 10px;
     transition: color 0.3s, border-bottom 0.3s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Hover effect */
@@ -53,20 +52,11 @@ header {
     border-bottom: 2px solid  #6a2c70;
 }
 /* Container for the logo */
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px; /* Adjust the size to match your logo design */
-    height: 150px;
-    background-color:  #6a2c70; /* Optional background for the logo container */
-    border-radius: 50%; /* Makes the container round */
-    overflow: hidden; /* Ensures the image fits inside the rounded shape */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for better aesthetics */
-}
+
 .logo img{
-    height: 200px;
+    height: 100px;
     width: auto;
+    border-radius: 15px;
 }
 /* Appliquer l'image de fond au body */
 body {
