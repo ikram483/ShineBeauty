@@ -1,5 +1,5 @@
 /* Reset basic styles */
-body, .logo, ul, li, a {
+ .logo, ul, li, a {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -64,5 +64,18 @@ header {
     overflow: hidden; /* Ensures the image fits inside the rounded shape */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for better aesthetics */
 }
-
+.logo img{
+    height: 200px;
+    width: auto;
+}
+/* Appliquer l'image de fond au body */
+body {
+    background-image: url('Backgroundimg.jpg'); /* Remplacez 'image.jpg' par le chemin vers votre image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: auto;
+    margin: 0; 
+} 
 
