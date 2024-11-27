@@ -61,11 +61,106 @@ header {
 /* Appliquer l'image de fond au body */
 body {
     background-image: url('Backgroundimg.jpg'); /* Remplacez 'image.jpg' par le chemin vers votre image */
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat-y;
+    background-size: auto;
     background-position: center;
-    height: 100vh;
+    height: 100%;
     width: auto;
     margin: 0; 
+    padding: 0;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
 } 
+.products-section {
+    padding: 20px;
+    text-align: center;
+}
 
+.products-section h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #f0e2b7;
+    border: 1px solid #C7AE6A;
+    border-radius: 10px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 4px 6px #0000001a;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product h2 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #555;
+}
+
+.product p {
+    color: #777;
+    font-size: 14px;
+}
+
+.product button {
+    background-color: #6a2c70;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.product button:hover {
+    background-color: #431766;
+}
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    body {
+      font-size: 12px;
+      
+     
+    }
+  }
+  h1 {
+   
+    color: #C7AE6A;
+    background-color: #6a2c70;
+    border-radius: 10px;
+    width: 50%; 
+    margin:auto;
+    text-align: center;
+  }
+  h3{
+    color: #C7AE6A;
+    background-color: #6a2c704f;
+    border-radius: 10px;
+    width: 30%; 
+    margin:auto;
+    text-align: center;
+
+  }

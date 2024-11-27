@@ -19,7 +19,74 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
     </header>
+    <div class="products-section">
+        <h1 style="color: #C7AE6A;background-color: #6a2c70;border-radius: 10px;width: 50%; margin:auto;">Nos Produits de Maquillage</h1>
+        <br>
+        <div class="products">
+            <!-- Produit 1 -->
+            <div class="product">
+                <img src="lipstick1.jpg.webp" alt="Rouge à lèvres">
+                <h2>Rouge à lèvres</h2>
+                <p>Un rouge à lèvres longue tenue, disponible en plusieurs teintes éclatantes.</p>
+                <span>100Mad</span>
+                <br>
+                <button>Acheter</button>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="product">
+                <img src="fontdetein1.jpg.webp" alt="Fond de teint">
+                <h2>Fond de teint</h2>
+                <p>Un fond de teint léger pour un teint parfait et naturel.</p>
+                <span>250Mad</span>
+                <br>
+                <button>Acheter</button>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="product">
+                <img src="Eyeshadow.jpg" alt="Palette de fards à paupières">
+                <h2>Palette de fards</h2>
+                <p>Palette riche en couleurs pour des looks variés, du quotidien aux soirées glamour.</p>
+                <span>300Mad</span>
+                <br>
+                <button>Acheter</button>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <h1>liste de commande</h1>
+        <br>
+        <h3>Merci de prend le temps pour remplir la formulaire</h3>
+        <form>
+
+            <label for="name">Nom et prénom</label>
+    <input type="text" id="name" name="name" required>
+    <div class="error" id="nameError"></div>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    <div class="error" id="emailError"></div>
+
+    <label for="address">Adresse</label>
+    <input type="text" id="address" name="address" required>
+    <div class="error" id="addressError"></div>
+
+    <label for="phone">Numéro de téléphone</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+    <div class="error" id="phoneError"></div>
+
+    <label for="quantity">Quantité</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+    <div class="error" id="quantityError"></div>
+
+    <p>Total : <span id="total">0</span> €</p>
+
+    <button type="submit">Commander</button>
+        </form>
+    </div>
     
 
     
