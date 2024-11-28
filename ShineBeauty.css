@@ -1,4 +1,4 @@
- .logo, ul, li, a {
+ .logo, ul, li,a{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -29,7 +29,7 @@ header {
     position: relative;
 }
 
-.menu ul li a {
+.menu ul li ,a{
     color:  #C7AE6A;
     font-size: 20px;
     font-weight: bold;
@@ -39,9 +39,9 @@ header {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.menu ul li a:hover {
+.menu ul li ,a:hover {
     color: #6a2c70;
-    border-bottom: 2px solid  #6a2c70;
+    
 }
 
 .logo img{
@@ -101,32 +101,39 @@ body {
 .product h2 {
     margin: 10px 0;
     font-size: 20px;
-    color: #555;
+    color: #4b4444;
 }
 
-.product p {
+
+.product p   {
     color: #777;
     font-size: 14px;
+}
+.product ul{
+  font-size: 13px;
+  color: #676161;
 }
 
 .product button {
     background-color: #6a2c70;
     color: #fff;
     border: none;
-    padding: 10px 15px;
+    padding: 10px 1px;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
     font-size: 16px;
+    justify-content: center;
 }
 
-.product button:hover {
+button:hover {
     background-color: #431766;
 }
 @media screen and (max-width: 768px) {
     body {
       font-size: 14px;
     }
+    
   }
   
   @media screen and (max-width: 480px) {
@@ -221,7 +228,10 @@ body {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: auto;
+    width: 80%; 
+    margin:auto;
+    border-radius: 10px;
   }
   th, td {
     border: 1px solid #ddd;
@@ -240,4 +250,146 @@ table {
     margin:auto;
     text-align: center;
   }
-  
+  /* Container for the animated title */
+.animated-title {
+  text-align: center;
+  margin: 60px 39px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Main Title */
+.animated-title h5 {
+  font-size: 3rem;
+  color: #cc47d8; /* ShineBeauty's theme color */
+  animation: slideIn 2s ease-out, fadeIn 3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+/* Highlight the "ShineBeauty" text */
+.animated-title h5 span {
+  color: #e2ba4b; /* Golden theme color */
+  font-weight: bold;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1.3rem;
+  color: #dbead9;
+  opacity: 0;
+  animation: fadeIn 4s ease-in forwards;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.footer {
+  position: relative;
+  background-color: #333;
+  color: #fff;
+  min-height: 100px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.footer-section h6 {
+  border-bottom: 2px solid #C7AE6A;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #C7AE6A;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #C7AE6A;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: scale(1.05);
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  color: #C7AE6A;
+  font-size: 20px;
+  background-color: #6a2c70;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icon:hover {
+  background-color: #C7AE6A;
+  color: #333;
+  transform: scale(1.1);
+}

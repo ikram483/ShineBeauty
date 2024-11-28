@@ -6,6 +6,9 @@
     <title>Shine Beauty</title>
     <link rel="stylesheet" href="ShineBeauty.css">
     <link rel="stylesheet" href="ShineBeauty.js">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet">
+
 
 </head>
 <body>
@@ -23,7 +26,16 @@
         </nav>
 
     </header>
-    <section id="products" class="product-section">
+    <div id="home" class="animated-title">
+      <h5>Bienvenue à <span>ShineBeauty</span></h5>
+      <p class="subtitle">
+        Le maquillage est un allié dans la gestion du stress, il réduit son impact.<br>
+        Nous choisissons le meilleur pour vous.
+      </p>
+    </div>
+<br><br><br>    <BR><br></BR>
+
+    <section id="Produits" class="product-section">
     <div class="products-section">
         <h1 style="color: #C7AE6A;background-color: #6a2c70;border-radius: 10px;width: 50%; margin:auto;">Nos Produits de Maquillage</h1>
         <br>
@@ -40,7 +52,7 @@
                     <li><strong>Disponibilité :</strong> En stock</li>
                   </ul>
                 <br>
-                <button >Acheter</button>
+                <button ><a id="abtn" href="#Acheter">Acheter</a></button>
             </div>
 
             
@@ -55,7 +67,7 @@
                     <li><strong>Disponibilité :</strong> En stock</li>
                   </ul>
                 <br>
-                <button>Acheter</button>
+                <button ><a id="abtn2"  href="#Acheter">Acheter</a></button>
             </div>
 
             <div class="product 3">
@@ -69,17 +81,17 @@
                     <li><strong>Disponibilité :</strong> En stock</li>
                   </ul>
                 <br>
-                <button>Acheter</button>
+                <button ><a id="abtn3"  href="#Acheter">Acheter</a></button>
             </div>
         </div>
     </div>
 </section>
-    <div class="card">
+    <div class="card" id="Acheter">
         <h1>liste de commande</h1>
         <br>
         <h3>Merci de prend le temps pour remplir la formulaire</h3>
         <br>
-        <section class="order-section">
+        <section id="contact" class="order-section">
         <form id="order-Form">
 
             <label for="name">Nom et prénom</label>
@@ -146,6 +158,60 @@
         </table>
       </section>
 
+
+
+
+      <footer class="footer">
+        <div class="footer-left">
+            <img src="smallogo.png" alt="Small Logo" class="footer-logo">
+        </div>
+        <div class="footer-container">
+            <!------Les sections------>
+            <div class="footer-section">
+                <h6>À propos</h6>
+                <p>Nous sommes une société marocaine spécialisée dans la vente de produits de maquillage de luxe et de haute qualité.</p>
+                <p><a href="/plus">Plus</a></p>
+            </div>
+            <div class="footer-section">
+                <h6>Liens</h6>
+                <ul>
+                    <li><a href="/boutique">Boutique</a></li>
+                    <li><a href="/contact">Contactez-nous</a></li>
+                    <li><a href="/faq">FAQs</a></li>
+                    <li><a href="/politique-de-retour">Politique de retour</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h6>Support Client</h6>
+                <ul>
+                    <li>Email: <a href="mailto:support@shinebeauty.com">support@shinebeauty.com</a></li>
+                    <li>Téléphone: <a href="tel:+212520550020">+212520550020</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h6>Suivez-nous</h6>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" class="social-icon" aria-label="Suivez-nous sur Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com" class="social-icon" aria-label="Suivez-nous sur Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.twitter.com" class="social-icon" aria-label="Suivez-nous sur Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" class="social-icon" aria-label="Suivez-nous sur on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+       
+        <div class="footer-bottom">
+            <p>Copyright © 2024 ShineBeauty. Tous droits réservés.</p>
+        </div>
+    </footer>
+    
     
     
     <script src="ShineBeauty.js"> </script>
