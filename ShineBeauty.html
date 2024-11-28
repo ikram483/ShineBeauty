@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shine Beauty</title>
     <link rel="stylesheet" href="ShineBeauty.css">
+    <link rel="stylesheet" href="ShineBeauty.js">
 
 </head>
 <body>
+   
     <header>
         <div class="logo">
             <img src="FinalLogo.png" alt="logo" class="logo">
@@ -21,74 +23,132 @@
         </nav>
 
     </header>
+    <section id="products" class="product-section">
     <div class="products-section">
         <h1 style="color: #C7AE6A;background-color: #6a2c70;border-radius: 10px;width: 50%; margin:auto;">Nos Produits de Maquillage</h1>
         <br>
         <div class="products">
-            <!-- Produit 1 -->
-            <div class="product">
+           
+            <div class="product 1">
                 <img src="lipstick1.jpg.webp" alt="Rouge à lèvres">
                 <h2>Rouge à lèvres</h2>
                 <p>Un rouge à lèvres longue tenue, disponible en plusieurs teintes éclatantes.</p>
-                <span>100Mad</span>
+                <ul>
+                    <li><strong>Taille :</strong> 7cm</li>
+                    <li><strong>Ingrédients :</strong><br> 50 % d'huile, 30 % de cire</li>
+                    <li><strong>Prix :</strong> 200 MAD</li>
+                    <li><strong>Disponibilité :</strong> En stock</li>
+                  </ul>
                 <br>
-                <button>Acheter</button>
+                <button >Acheter</button>
             </div>
 
-            <!-- Produit 2 -->
-            <div class="product">
+            
+            <div class="product 2">
                 <img src="fontdetein1.jpg.webp" alt="Fond de teint">
                 <h2>Fond de teint</h2>
                 <p>Un fond de teint léger pour un teint parfait et naturel.</p>
-                <span>250Mad</span>
+                <ul>
+                    <li><strong>Taille :</strong> 30ml</li>
+                    <li><strong>Ingrédients :</strong><br> Eau, Glycerine, Silicones</li>
+                    <li><strong>Prix :</strong> 200 MAD</li>
+                    <li><strong>Disponibilité :</strong> En stock</li>
+                  </ul>
                 <br>
                 <button>Acheter</button>
             </div>
 
-            <!-- Produit 3 -->
-            <div class="product">
+            <div class="product 3">
                 <img src="Eyeshadow.jpg" alt="Palette de fards à paupières">
                 <h2>Palette de fards</h2>
                 <p>Palette riche en couleurs pour des looks variés, du quotidien aux soirées glamour.</p>
-                <span>300Mad</span>
+                <ul>
+                    <li><strong>Taille :</strong> 25cm</li>
+                    <li><strong>Ingrédients :</strong><br> Talc, Mica, Zinc Stearates</li>
+                    <li><strong>Prix :</strong> 200 MAD</li>
+                    <li><strong>Disponibilité :</strong> En stock</li>
+                  </ul>
                 <br>
                 <button>Acheter</button>
             </div>
         </div>
     </div>
+</section>
     <div class="card">
         <h1>liste de commande</h1>
         <br>
         <h3>Merci de prend le temps pour remplir la formulaire</h3>
-        <form>
+        <br>
+        <section class="order-section">
+        <form id="order-Form">
 
             <label for="name">Nom et prénom</label>
-    <input type="text" id="name" name="name" required>
+            <br>
+    <input type="text" id="name" name="name" placeholder="Entrer ton nom et prénom" required>
     <div class="error" id="nameError"></div>
 
     <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
+    <br>
+    <input type="email" id="email" name="email"  placeholder="Entrer ton email" required>
     <div class="error" id="emailError"></div>
 
     <label for="address">Adresse</label>
-    <input type="text" id="address" name="address" required>
+    <br>
+    <input type="text" id="address" name="address" placeholder="Entrer your adresse" required>
     <div class="error" id="addressError"></div>
 
     <label for="phone">Numéro de téléphone</label>
-    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+    <br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="entrer ton numéro de telephone" required>
     <div class="error" id="phoneError"></div>
+    <label for="choice">Sélectionner le Produit</label><br>
+  <select name="choice" id="choice">
+    <option value="1"  >Rouge à lévre</option>
+    <option value="2">fond de teint</option>
+    <option value="3">Pallete de fards</option>
+    </select>
+    <div class="error" id="nameError"></div>
+    <br><br>
 
     <label for="quantity">Quantité</label>
+    <br>
     <input type="number" id="quantity" name="quantity" min="1" value="1" required>
     <div class="error" id="quantityError"></div>
 
-    <p>Total : <span id="total">0</span> €</p>
+    <p>Total : <span id="total">200</span> Mad</p>
+    <br>
+    <br>
 
     <button type="submit">Commander</button>
         </form>
+    </section>
     </div>
-    
+    <br><br>
+    <section class="orders-section">
+       <br>
+       <h2 id="titretableau">Commandes Passées</h2>
+       <br>
+        <table>
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Email</th>
+              <th>Adresse</th>
+              <th>Téléphone</th>
+              <th>Quantité</th>
+              <th>Total</th>
+              <th>Produit</th>
+            </tr>
+          </thead>
+          <tbody id="ordersTableBody">
+           
+          </tbody>
+        </table>
+      </section>
 
+    
+    
+    <script src="ShineBeauty.js"> </script>
     
 </body>
 </html>

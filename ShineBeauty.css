@@ -1,4 +1,3 @@
-/* Reset basic styles */
  .logo, ul, li, a {
     margin: 0;
     padding: 0;
@@ -7,26 +6,20 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* Header Styling */
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color:  #6a2c7062; /* Soft pink for a beauty theme */
+    background-color:  #6a2c7062;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 0px; /* Espacement intérieur */
-    border-radius: 15px; /* Coins arrondis */
+    padding: 0px; 
+    border-radius: 15px; 
     max-width: 100%;
     
 }
 
-/* Logo Styling */
-
-
-
-
-/* Navigation Menu */
 .menu ul {
     display: flex;
     gap: 10px;
@@ -46,21 +39,18 @@ header {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Hover effect */
 .menu ul li a:hover {
     color: #6a2c70;
     border-bottom: 2px solid  #6a2c70;
 }
-/* Container for the logo */
 
 .logo img{
     height: 100px;
     width: auto;
     border-radius: 15px;
 }
-/* Appliquer l'image de fond au body */
 body {
-    background-image: url('Backgroundimg.jpg'); /* Remplacez 'image.jpg' par le chemin vers votre image */
+    background-image: url('Backgroundimg.jpg');
     background-repeat: repeat-y;
     background-size: auto;
     background-position: center;
@@ -149,18 +139,105 @@ body {
   h1 {
    
     color: #C7AE6A;
-    background-color: #6a2c70;
+    background-color: hsl(295, 44%, 31%);
     border-radius: 10px;
     width: 50%; 
     margin:auto;
     text-align: center;
   }
   h3{
-    color: #C7AE6A;
-    background-color: #6a2c704f;
+    color:rgb(64, 62, 62);
+    background-color: #c7ae6a51;
     border-radius: 10px;
     width: 30%; 
     margin:auto;
     text-align: center;
 
   }
+  form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px hsl(295, 44%, 31%);
+    border-radius: 19px;
+    background-color: hsla(294, 52%, 28%, 0.349);
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rgb(39, 37, 37);
+    
+  }
+  input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+  }
+  select{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+
+    }
+  button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: hsl(295, 44%, 31%);
+    color: #fff;
+    width: 30%; 
+    margin:auto; 
+    display: block; 
+    
+  }
+
+  button:hover {
+    background-color:#C7AE6A;
+
+  }
+  .error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    
+  }
+
+  #total {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rgb(39, 37, 37);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  th {
+    background-color: #ddcda1;
+    color: hsl(295, 44%, 31%);
+    
+  }
+  #titretableau{
+    color: #C7AE6A;
+    background-color: hsl(295, 44%, 31%);
+    border-radius: 10px;
+    width: 50%; 
+    margin:auto;
+    text-align: center;
+  }
+  
