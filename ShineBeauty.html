@@ -17,15 +17,16 @@
         <div class="logo">
             <img src="FinalLogo.png" alt="logo" class="logo">
         </div>
-        <nav class="menu">
+        <button class="navbar-toggler" id="navbarToggler" aria-label="Toggle Navigation">☰</button>
+        <nav class="menu" id="navbarMenu">
             <ul>
                 <li><a href="#home">Accueil</a></li>
-                <li><a href="#Produits">Produit</a></li>
+                <li><a href="#Produits">Produits</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-
     </header>
+    
     <div id="home" class="animated-title">
       <h5>Bienvenue à <span>ShineBeauty</span></h5>
       <p class="subtitle">
@@ -96,22 +97,22 @@
 
             <label for="name">Nom et prénom</label>
             <br>
-    <input type="text" id="name" name="name" placeholder="Entrer ton nom et prénom" required>
+    <input type="text" id="name" name="name" placeholder="Entrer ton nom et prénom">
     <div class="error" id="nameError"></div>
 
     <label for="email">Email</label>
     <br>
-    <input type="email" id="email" name="email"  placeholder="Entrer ton email" required>
+    <input type="email" id="email" name="email"  placeholder="Entrer ton email" >
     <div class="error" id="emailError"></div>
 
     <label for="address">Adresse</label>
     <br>
-    <input type="text" id="address" name="address" placeholder="Entrer your adresse" required>
+    <input type="text" id="address" name="address" placeholder="Entrer your adresse" >
     <div class="error" id="addressError"></div>
 
     <label for="phone">Numéro de téléphone</label>
     <br>
-    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="entrer ton numéro de telephone" required>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="entrer ton numéro de telephone" >
     <div class="error" id="phoneError"></div>
     <label for="choice">Sélectionner le Produit</label><br>
   <select name="choice" id="choice">
@@ -124,7 +125,7 @@
 
     <label for="quantity">Quantité</label>
     <br>
-    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+    <input type="number" id="quantity" name="quantity" min="1" value="1">
     <div class="error" id="quantityError"></div>
 
     <p>Total : <span id="total">200</span> Mad</p>
@@ -160,20 +161,23 @@
 
 
 
-
       <footer class="footer">
-        <div class="footer-left">
-            <img src="smallogo.png" alt="Small Logo" class="footer-logo">
-        </div>
         <div class="footer-container">
-            <!------Les sections------>
+            <!-- Small Logo -->
+            <div class="footer-section footer-logo-column">
+                <div class="footer-logo-wrapper">
+                    <img src="smallogo.png" alt="Small Logo" class="footer-logo">
+                </div>
+            </div>
+            <!-- À propos Section -->
             <div class="footer-section">
-                <h6>À propos</h6>
+                <h4>À propos</h4>
                 <p>Nous sommes une société marocaine spécialisée dans la vente de produits de maquillage de luxe et de haute qualité.</p>
                 <p><a href="/plus">Plus</a></p>
             </div>
+            <!-- Liens Section -->
             <div class="footer-section">
-                <h6>Liens</h6>
+                <h4>Liens</h4>
                 <ul>
                     <li><a href="/boutique">Boutique</a></li>
                     <li><a href="/contact">Contactez-nous</a></li>
@@ -181,15 +185,17 @@
                     <li><a href="/politique-de-retour">Politique de retour</a></li>
                 </ul>
             </div>
+            <!-- Support Client Section -->
             <div class="footer-section">
-                <h6>Support Client</h6>
+                <h4>Support Client</h4>
                 <ul>
                     <li>Email: <a href="mailto:support@shinebeauty.com">support@shinebeauty.com</a></li>
                     <li>Téléphone: <a href="tel:+212520550020">+212520550020</a></li>
                 </ul>
             </div>
+            <!-- Suivez-nous Section -->
             <div class="footer-section">
-                <h6>Suivez-nous</h6>
+                <h4>Suivez-nous</h4>
                 <div class="social-icons">
                     <a href="https://www.facebook.com" class="social-icon" aria-label="Suivez-nous sur Facebook">
                         <i class="fab fa-facebook-f"></i>
@@ -200,16 +206,18 @@
                     <a href="https://www.twitter.com" class="social-icon" aria-label="Suivez-nous sur Twitter">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="https://www.linkedin.com" class="social-icon" aria-label="Suivez-nous sur on LinkedIn">
+                    <a href="https://www.linkedin.com" class="social-icon" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </div>
             </div>
         </div>
-       
         <div class="footer-bottom">
-            <p>Copyright © 2024 ShineBeauty. Tous droits réservés.</p>
+            <div class="Copyright"><p>Copyright © 2024 ShineBeauty. Tous droits réservés.</p>
+                <p>Casablanca, Maroc</p></div>
+            
         </div>
+    
     </footer>
     
     
