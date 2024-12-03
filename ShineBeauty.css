@@ -284,18 +284,24 @@ table {
   margin: auto;
   width: 80%;
   margin: auto;
-  border-radius: 10px;
 }
 
 th,
 td {
-  border: 1px solid #ddd;
+  border: 1px solid #f7f7f7;
   padding: 10px;
+  
+
+  
+
+  
 }
 
 th {
   background-color: #ddcda1;
   color: hsl(295, 44%, 31%);
+  
+  
 
 }
 
@@ -416,6 +422,7 @@ th {
   table {
     font-size: 12px;
     overflow: scroll;
+  
   }
 
   #titretableau {
@@ -493,6 +500,7 @@ th {
   flex: 1 1 220px; 
   max-width: 300px;
   margin: 10px 0;
+ 
 }
 
 .footer-section h4 {
@@ -553,4 +561,17 @@ th {
   padding: 20px 0;
   font-size: 14px;
   font-family: Arial, sans-serif;
+ 
 } 
+.content-row {
+  color: rgb(253, 244, 244);
+  font-family: Arial, Helvetica, sans-serif;
+  align-content: center;
+  scroll-margin-bottom: 100px;
+}
+#abtn2  {
+  text-align: center;
+  padding: 7px;
+  
+
+}

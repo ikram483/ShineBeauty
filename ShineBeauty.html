@@ -96,38 +96,39 @@
 
             <label for="name">Nom et prénom</label>
             <br>
-    <input type="text" id="name" name="name" placeholder="Entrer ton nom et prénom">
+    <input type="text" id="name" name="name" placeholder="Entrer ton nom et prénom" onblur="displayError(this, nameError, 'Le champ nom et prénom est requis.')">
     <div class="error" id="nameError"></div>
 
     <label for="email">Email</label>
     <br>
-    <input type="email" id="email" name="email"  placeholder="Entrer ton email" >
+    <input type="email" id="email" name="email"  placeholder="Entrer ton email" onblur="validateEmail(this, document.getElementById('emailError'))">
     <div class="error" id="emailError"></div>
 
     <label for="address">Adresse</label>
     <br>
-    <input type="text" id="address" name="address" placeholder="Entrer your adresse" >
+    <input type="text" id="address" name="address" placeholder="Entrer your adresse"  onblur="displayError(this, addressError, 'Le champ adresse est requis.')" >
     <div class="error" id="addressError"></div>
 
     <label for="phone">Numéro de téléphone</label>
     <br>
-    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="entrer ton numéro de telephone" >
+    <input type="number" id="phone" name="phone" pattern="[0-9]{10}" placeholder="entrer ton numéro de telephone" onblur="validatePhone(this, document.getElementById('phoneError'))">
     <div class="error" id="phoneError"></div>
     <label for="choice">Sélectionner le Produit</label><br>
   <select name="choice" id="choice">
-    <option value="1"  >Rouge à lévre</option>
-    <option value="2">fond de teint</option>
-    <option value="3">Pallete de fards</option>
+    <option value="1">Selectionner votre Produit </option>
+    <option value="2"  >Rouge à lévre</option>
+    <option value="3">fond de teint</option>
+    <option value="4">Pallete de fards</option>
     </select>
     <div class="error" id="nameError"></div>
     <br><br>
 
     <label for="quantity">Quantité</label>
     <br>
-    <input type="number" id="quantity" name="quantity" min="1" value="1">
+    <input type="number" id="quantity" name="quantity" min="1" value="1" oninput="calculateTotal()" >
     <div class="error" id="quantityError"></div>
 
-    <p>Total : <span id="total">200</span> Mad</p>
+    <p>Total : <span id="total">200</span> MAD</p>
     <br>
     <br>
 
@@ -157,7 +158,7 @@
           </tbody>
         </table>
       </section>
-
+<br><br><br> <br><br>
 
 
       <footer class="footer">

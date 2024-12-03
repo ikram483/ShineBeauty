@@ -68,6 +68,7 @@ function validatePhone(input, errorElement) {
 
 form.addEventListener('submit', (event) => {
   event.preventDefault(); 
+  alert ("ce produit a ete ajoute au panier");
 
   const isNameValid = displayError(nameInput, nameError, 'Le champ nom et prénom est requis.');
   const isEmailValid = validateEmail(emailInput, emailError);
@@ -89,13 +90,14 @@ form.addEventListener('submit', (event) => {
     addOrderToTable(order);
 
     form.reset();
-    document.getElementById('total').textContent = '200';
+    document.getElementById('total').textContent = '200';//calcul tot
   }
 });
 
 function addOrderToTable(order) {
   const tableBody = document.getElementById('ordersTableBody');
   const newRow = document.createElement('tr');
+  newRow.classList.add('content-row');//style table
   newRow.innerHTML = `
     <td>${order.name}</td>
     <td>${order.email}</td>
@@ -110,7 +112,7 @@ function addOrderToTable(order) {
 
 quantityInput.addEventListener('input', () => {
   const quantity = parseInt(quantityInput.value, 10) || 0;
-  const total = quantity * 200;
+  const total = quantity * 200;//calcul tot
   document.getElementById('total').textContent = total;
 });
 
